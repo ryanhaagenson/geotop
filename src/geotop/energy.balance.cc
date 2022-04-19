@@ -23,8 +23,6 @@
 //Author: Stefano Endrizzi
 //Contents: Energy balance (and also mass balance for snow and glacier)
 
-Testing if changes are making it to the github repository. 
-
 #include "constants.h"
 #include "struct.geotop.h"
 #include "energy.balance.h"
