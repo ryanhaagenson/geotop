@@ -31,7 +31,7 @@ void Timer::print_summary() {
             << "+---------------------------------------------" << extra_dash
             << "+------------"
             << "+------------+\n"
-            << "| Total CPU RYAN elapsed since start          " << extra_space
+            << "| Total CPU time elapsed since start          " << extra_space
             << "|";
   std::cerr << std::setw(10) << std::setprecision(3) << std::right;
   std::cerr << t_tot << "s |            |\n";
