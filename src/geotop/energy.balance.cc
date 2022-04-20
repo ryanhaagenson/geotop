@@ -258,6 +258,9 @@ short PointEnergyBalance(long i, long r, long c, double Dt, double JDb,
     double ic=0., wa, rho=0.;
     long lpb;
 
+    //test print to see if I can make it work
+    printf("Hello world!");
+
     //initialization of cumulated water volumes and set soil ancillary state vars
 
     if (i <= A->P->total_channel)
