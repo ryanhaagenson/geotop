@@ -258,12 +258,6 @@ short PointEnergyBalance(long i, long r, long c, double Dt, double JDb,
     double ic=0., wa, rho=0.;
     long lpb;
 
-    //test print to see if I can make it work
-    test_var = 1.0;
-    //f = fopen("test_file.txt", "w");
-    //printf(f, "Simulation Period:%f\n",test_var);
-    //fclose(f);
-
     //initialization of cumulated water volumes and set soil ancillary state vars
 
     if (i <= A->P->total_channel)
