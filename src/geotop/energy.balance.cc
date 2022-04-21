@@ -259,7 +259,10 @@ short PointEnergyBalance(long i, long r, long c, double Dt, double JDb,
     long lpb;
 
     //test print to see if I can make it work
-    printf("Hello world!");
+    test_var = 1.0;
+    f = fopen("test_file.txt", "w");
+    fprintf(f, "Simulation Period:%f\n",test_var);
+    fclose(f);
 
     //initialization of cumulated water volumes and set soil ancillary state vars
 
