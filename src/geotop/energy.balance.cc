@@ -258,6 +258,8 @@ short PointEnergyBalance(long i, long r, long c, double Dt, double JDb,
     double ic=0., wa, rho=0.;
     long lpb;
 
+    FILE *f;
+
     f = fopen("Test_file.txt", "w");
     fprintf(f, "Simulation Period:");
     fclose(f);
