@@ -260,8 +260,9 @@ short PointEnergyBalance(long i, long r, long c, double Dt, double JDb,
 
     FILE *f;
 
-    f = fopen("Test_file.txt", "w");
-    fprintf(f, "Simulation Period:");
+    printf("Hello world!\n")
+    f = fopen("/Volumes/SeagateBUP/Research/HMA_Permafrost/Sims/GEOtop_edit_testing/Test_file.txt", "w");
+    fprintf(f, "Simulation Period:\n");
     fclose(f);
 
     //initialization of cumulated water volumes and set soil ancillary state vars
