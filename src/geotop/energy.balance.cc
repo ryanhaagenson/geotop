@@ -261,7 +261,7 @@ short PointEnergyBalance(long i, long r, long c, double Dt, double JDb,
     FILE *f;
 
     printf("Hello world!\n");
-    f = fopen("Test_file.txt", "w");
+    f = fopen("/Volumes/SeagateBUP/Research/HMA_Permafrost/Sims/GEOtop_edit_testing/Test_file.txt", "w");
     fprintf(f, "Simulation Period:\n");
     fclose(f);
 
