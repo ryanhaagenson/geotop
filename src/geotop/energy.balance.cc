@@ -260,7 +260,7 @@ short PointEnergyBalance(long i, long r, long c, double Dt, double JDb,
 
     FILE *f;
 
-    printf("Hello world!\n")
+    printf("Hello world!\n");
     f = fopen("Test_file.txt", "w");
     fprintf(f, "Simulation Period:\n");
     fclose(f);
