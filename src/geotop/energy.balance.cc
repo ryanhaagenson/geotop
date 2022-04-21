@@ -258,15 +258,17 @@ short PointEnergyBalance(long i, long r, long c, double Dt, double JDb,
     double ic=0., wa, rho=0.;
     long lpb;
 
-    FILE *f;
-
-    printf("Mark 1\n");
-    f = fopen("/Volumes/SeagateBUP/Research/HMA_Permafrost/Sims/GEOtop_edit_testing/Test_file.txt", "w");
+    printf("Mark 1\n");    
+    double test_var = 1.0;
     printf("Mark 2\n");
-    fprintf(f, "Test\n");
+    FILE *f;
     printf("Mark 3\n");
-    fclose(f);
+    f = fopen("Test_file.txt", "w");
     printf("Mark 4\n");
+    fprintf(f, "Test var = %f\n",test_var);
+    printf("Mark 5\n");
+    fclose(f);
+    printf("Mark 6\n");
 
     //initialization of cumulated water volumes and set soil ancillary state vars
 
@@ -1064,7 +1066,7 @@ short PointEnergyBalance(long i, long r, long c, double Dt, double JDb,
                                 else if (opnt[l] == oSWb)
                                 {
                                     odp[opnt[l]][(*A->P->jplot)(j)-1] = SWbeam*Dt/(*A->P->Dtplot_point)(i_sim);
-                                }
+                                 }
                                 else if (opnt[l] == oSWd)
                                 {
                                     odp[opnt[l]][(*A->P->jplot)(j)-1] = SWdiff*Dt/(*A->P->Dtplot_point)(i_sim);
