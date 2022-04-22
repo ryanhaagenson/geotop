@@ -40,6 +40,8 @@
 #include "meteodata.h"
 #include "logger.h"
 #include "timer.h"
+#include <iostream>
+#include <fstream>
 
 extern long number_novalue, number_absent;
 extern char *string_novalue;
