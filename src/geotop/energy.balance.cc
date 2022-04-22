@@ -276,18 +276,16 @@ short PointEnergyBalance(long i, long r, long c, double Dt, double JDb,
     double test_var = 1.0;
     printf("Mark 2\n");
     // FILE *f;
-    ofstream myfile;
+    std::ofstream myfile;
     printf("Mark 3\n");
     // f = fopen("Test_file.txt", "r");
-    myfile.open ("Test_file.txt", ios::out | ios::app ); 
+    myfile.open ("Test_file.txt", std::ofstream::out); 
     printf("Mark 4\n");
     // fprintf(f, "Test var = %f\n",test_var);
     if (myfile.is_open())
     {
         myfile << "Test line.\n";
     }
-    else cout << "Unable to open file";
-    return 0;
     printf("Mark 5\n");
     // fclose(f);
     myfile.close();
