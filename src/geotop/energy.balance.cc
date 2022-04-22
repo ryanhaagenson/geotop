@@ -285,10 +285,10 @@ short PointEnergyBalance(long i, long r, long c, double Dt, double JDb,
         myfile << "Test line.\n";
     }
     else cout << "Unable to open file";
-    return 0
+    return 0;
     printf("Mark 5\n");
     // fclose(f);
-    myfile.close()
+    myfile.close();
     printf("Mark 6\n");
 
     //initialization of cumulated water volumes and set soil ancillary state vars
