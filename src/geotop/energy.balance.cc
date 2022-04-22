@@ -258,16 +258,37 @@ short PointEnergyBalance(long i, long r, long c, double Dt, double JDb,
     double ic=0., wa, rho=0.;
     long lpb;
 
+    // printf("Mark 1\n");    
+    // double test_var = 1.0;
+    // printf("Mark 2\n");
+    // FILE *f;
+    // printf("Mark 3\n");
+    // f = fopen("Test_file.txt", "r");
+    // printf("Mark 4\n");
+    // fprintf(f, "Test var = %f\n",test_var);
+    // printf("Mark 5\n");
+    // fclose(f);
+    // printf("Mark 6\n");
+
     printf("Mark 1\n");    
     double test_var = 1.0;
     printf("Mark 2\n");
-    FILE *f;
+    // FILE *f;
+    ofstream myfile;
     printf("Mark 3\n");
-    f = fopen("Test_file.txt", "w");
+    // f = fopen("Test_file.txt", "r");
+    myfile.open ("Test_file.txt", ios::out | ios::app ); 
     printf("Mark 4\n");
-    fprintf(f, "Test var = %f\n",test_var);
+    // fprintf(f, "Test var = %f\n",test_var);
+    if (myfile.is_open())
+    {
+        myfile << "Test line.\n";
+    }
+    else cout << "Unable to open file";
+    return 0
     printf("Mark 5\n");
-    fclose(f);
+    // fclose(f);
+    myfile.close()
     printf("Mark 6\n");
 
     //initialization of cumulated water volumes and set soil ancillary state vars
