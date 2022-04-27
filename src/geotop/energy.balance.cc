@@ -282,7 +282,7 @@ short PointEnergyBalance(long i, long r, long c, double Dt, double JDb,
     printf("Mark 4\n");
     if (myfile.is_open())
     {
-        printf("Made it here.")
+        printf("Made it here.");
         myfile << "Test line.\n";
     }
     else 
