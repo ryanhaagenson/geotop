@@ -42,6 +42,7 @@
 #include "timer.h"
 #include <iostream>
 #include <fstream>
+#include <stdlib.h>
 
 extern long number_novalue, number_absent;
 extern char *string_novalue;
