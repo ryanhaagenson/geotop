@@ -278,10 +278,11 @@ short PointEnergyBalance(long i, long r, long c, double Dt, double JDb,
     printf("Mark 2\n");
     std::ofstream myfile;
     printf("Mark 3\n");
-    myfile.open("/Volumes/SeagateBUP/Research/HMA_Permafrost/Sims/GEOtop_edit_testing/Test_file.txt", std::ofstream::out); 
+    myfile.open("Test_file.txt", std::ofstream::out); 
     printf("Mark 4\n");
     if (myfile.is_open())
     {
+        printf("Made it here.")
         myfile << "Test line.\n";
     }
     else 
