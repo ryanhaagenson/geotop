@@ -290,7 +290,7 @@ short PointEnergyBalance(long i, long r, long c, double Dt, double JDb,
     printf("Mark 5\n");
     myfile.close();
     printf("Mark 6\n");
-    exit()
+    exit();
 
     //initialization of cumulated water volumes and set soil ancillary state vars
 
