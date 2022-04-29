@@ -40,9 +40,9 @@
 #include "meteodata.h"
 #include "logger.h"
 #include "timer.h"
-#include <iostream>
-#include <fstream>
-#include <stdlib.h>
+// #include <iostream>
+// #include <fstream>
+// #include <stdlib.h>
 
 extern long number_novalue, number_absent;
 extern char *string_novalue;
@@ -273,26 +273,27 @@ short PointEnergyBalance(long i, long r, long c, double Dt, double JDb,
     // fclose(f);
     // printf("Mark 6\n");
 
-    printf("Mark 1\n");    
-    double test_var = 1.0;
-    printf("Mark 2\n");
-    std::ofstream myfile;
-    printf("Mark 3\n");
-    myfile.open("Test_file.txt", std::ofstream::out); 
-    printf("Mark 4\n");
-    if (myfile.is_open())
-    {
-        printf("Made it here.");
-        myfile << "Test line.\n";
-    }
-    else 
-    {
-        printf("The myfile.is_open command returned false.");
-    }
-    printf("Mark 5\n");
-    myfile.close();
-    printf("Mark 6\n");
-    exit(0);
+    // printf("Mark 1\n");    
+    // double test_var = 1.0;
+    // printf("Mark 2\n");
+    // std::ofstream myfile;
+    // printf("Mark 3\n");
+    // myfile.open("Test_file.txt", std::ofstream::out); 
+    // printf("Mark 4\n");
+    // if (myfile.is_open())
+    // {
+    //     printf("Made it here.");
+    //     printf
+    //     myfile << "Test line.\n";
+    // }
+    // else 
+    // {
+    //     printf("The myfile.is_open command returned false.");
+    // }
+    // printf("Mark 5\n");
+    // myfile.close();
+    // printf("Mark 6\n");
+    // exit(0);
 
     //initialization of cumulated water volumes and set soil ancillary state vars
 
